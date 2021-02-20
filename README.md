@@ -1,18 +1,30 @@
 # TCP-Chat-App
 
-TCP server that can chat with multiple clients.
-
 ## usage :
-### first you should start the server
-`python3 server.py`
+### first you should make them executable
+`chmod +x server.py`
+`chmod +x client.py`
 
-### then you can run a client
-`python3 client.py`
+### then you can run them
+##### on server machine
+
+`./server.py`
+
+##### on client machine
+
+`./ client.py`
+
+
+### to send file
+
+`send -f filename`
 
 ***you can run any number of client as the server is multithreaded**
 
-## Example of result:
+## Examples of result:
+
 ![alt text](https://i.imgur.com/35WxOwC.png)
+![](https://i.imgur.com/hQeBqqh.jpg)
 
 ## software requirements
 - python3
