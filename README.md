@@ -21,7 +21,7 @@
 
 `send -f filename`
 
-***you can run any number of client as the server is multithreaded**
+**you can run any number of client as the server is multithreaded**
 
 ## Examples of result:
 
