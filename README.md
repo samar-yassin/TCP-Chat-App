@@ -1,7 +1,6 @@
 # TCP-Chat-App
 
 
-
 ## usage :
 **WINDOWS** :
 
@@ -22,6 +21,7 @@
 3. run the client script
 
       `python3 client.py`
+
 
 **LINUX**:
 
@@ -54,6 +54,7 @@
 
 ## Features :
 - **sending file**
+
 `send -f filename`
 
 
