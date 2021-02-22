@@ -11,7 +11,7 @@
 **on client machine**
 
 1. get your server IP address
-    1. go to your server machine and run this command
+    1. go to your server machine and open CMD and run this command
     
         `ipconfig`
         
@@ -38,7 +38,7 @@
 **on client machine**
 
 1. get your server IP address
-    1. go to your server machine and run this command
+    1. go to your server machine and open your terminal and run this command
     
         `ifconfig`
         
