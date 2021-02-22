@@ -2,7 +2,7 @@
 
 
 ## usage :
-**WINDOWS** :
+**WINDOWS :**
 
 **on server machine**
 
@@ -23,7 +23,7 @@
       `python3 client.py`
 
 
-**LINUX**:
+**LINUX :**
 
 1. make them executable
 `chmod +x server.py`
