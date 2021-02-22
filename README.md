@@ -3,17 +3,39 @@
 
 
 ## usage :
-### first you should make them executable
+**WINDOWS** :
+
+**on server machine**
+
+`python3 server.py`
+
+**on client machine**
+
+1. get your server IP address
+    1. go to your server machine and run this command
+    
+        `ipconfig`
+        
+    2. copy the IP address
+2. change host variable in client.py with your server IP address
+        ![](https://i.imgur.com/IWnlM2O.png)
+3. run the client script
+
+      `python3 client.py`
+
+**LINUX**:
+
+1. make them executable
 `chmod +x server.py`
 
 `chmod +x client.py`
 
-### then you can run them
-##### on server machine
+2. run them
+**on server machine**
 
 `./server.py`
 
-##### on client machine
+**on client machine**
 
 1. get your server IP address
     1. go to your server machine and run this command
@@ -27,11 +49,13 @@
 
       `./client.py`
 
+**you can run any number of client as the server is multithreaded**
 
-### sending file
+
+## Features :
+- **sending file**
 `send -f filename`
 
-**you can run any number of client as the server is multithreaded**
 
 ## Examples of result:
 
