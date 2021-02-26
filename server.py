@@ -16,25 +16,29 @@ def handler(client,ip,port):
 	while data != "exit" :
 		data = client.recv(1024)
 		data = data.decode('ascii')
-
 		if data =="exit":
 			break
 		else :
-			sendFilesHandler.isSending(data,ip,port,client,"server")
+			cont = sendFilesHandler.isSending(data,ip,port,client,"server")
+			if cont!="break" :
+				continue
 
-		message=input("$ ")
-
-		cont = sendFilesHandler.handleFileTransfer(client,message)
-
+		while True:
+			message=input("$ ")
+			cont = sendFilesHandler.handleFileTransfer(client,message)
+			if(cont == "break"):
+				break
 
 	client.close()
 	print("$ CONNECTION CLOSED with : %s:%s" %(ip , port))
 
+try:
+	while True:
+		client,addr = server.accept()
+		print ("$ ACCEPTED CONNECTION from : %s:%s" %(addr[0] , addr[1]))
+		_thread.start_new_thread(handler ,(client,addr[0],addr[1],))
 
-while True:
-	client,addr = server.accept()
-	print ("$ ACCEPTED CONNECTION from : %s:%s" %(addr[0] , addr[1]))
-	_thread.start_new_thread(handler ,(client,addr[0],addr[1],))
 
-
-server.close()
+except KeyboardInterrupt:
+	print("$ SOCKET CLOSED")
+	server.close()
